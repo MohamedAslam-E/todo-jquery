@@ -17,7 +17,7 @@ $(function () {
     const taskId = $taskItem.data("id");
     const currentTask = $taskItem.find(".task-text").text().trim();
     const updatedTask = prompt("Update task:", currentTask);
-    if (updatedTask !== null) {
+    if (updatedTask !== "") {
       updateTask(taskId, updatedTask);
     }
   });
